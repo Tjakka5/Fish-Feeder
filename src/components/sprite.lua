@@ -1,9 +1,9 @@
 local Fluid = require("lib.fluid")
 
-local Sprite = Fluid.component(function(e, texture, color, layer)
+local Sprite = Fluid.component(function(e, texture, layer)
    e.texture = texture
-   e.color   = color or {255, 255, 255, 255}
-   e.layer   = layer or "foreground"
+   e.layer   = layer
+   e.id      = nil
 end)
 
 return Sprite
